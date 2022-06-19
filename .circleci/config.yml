@@ -1,0 +1,13 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@4.1
+
+jobs:
+  build:
+    executor:
+      name: win/default
+      shell: cmd.exe
+    steps:
+      - checkout
+      - run: cmd ./ci/build_and_test.bat
