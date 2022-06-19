@@ -10,4 +10,4 @@ jobs:
       shell: cmd.exe
     steps:
       - checkout
-      - run: cmd ./ci/build_and_test.bat
+      - run: ci\build_and_test.bat
